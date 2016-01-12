@@ -4,13 +4,19 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 
 public class MainActivity extends ActionBarActivity {
-
+    private Button btViewAnim;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        findview();
+    }
+    private void findview(){
+        btViewAnim= (Button) findViewById(R.id.bt_veiwanima);
+
     }
 
     @Override
